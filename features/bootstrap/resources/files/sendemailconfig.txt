@@ -1,0 +1,7 @@
+Host = smtp.gmail.com
+SMTPAuth = true
+Username = gwr.autotest1@gmail.com
+Password = $Reset123$
+SMTPSecure = tls
+Port = 587
+Recipients = madhav.shelke@xcelacore.com,madhav.shelke4@gmail.com

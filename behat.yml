@@ -1,0 +1,59 @@
+browserstack_chrome:
+  formatters:
+    pretty: true
+    html:
+      output_path: ./features/bootstrap/resources
+  extensions:
+    Behat\MinkExtension:
+      show_cmd: "open %s"
+      base_url: https://www.greatwolf.com
+      browser_stack:
+        username: 'chadross1'
+        access_key: 'sjdP5sGNon7yzgVogp46'
+        capabilities:
+          browser: 'chrome'
+          browserVersion: 63
+          # This is required for local testing.
+          browserstack-tunnel: true
+          browserstack-debug: true
+      goutte: ~
+      javascript_session: 'browser_stack'
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: Report
+      print_args: true
+      print_outp: true
+      loop_break: true
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+local_chrome:
+  formatters:
+    pretty: true
+    html:
+      output_path: ./features/bootstrap/resources
+  extensions:
+    Behat\MinkExtension:
+      base_url: https://www.greatwolf.com
+      selenium2:
+        browser: chrome
+        capabilities:
+          "marionette": true
+          chrome:
+            switches:
+              - "start-maximized"
+      goutte: ~
+      javascript_session: selenium2
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: Report
+      print_args: true
+      print_outp: true
+      loop_break: true
+  suites:
+    default:
+      contexts:
+        - FeatureContext
