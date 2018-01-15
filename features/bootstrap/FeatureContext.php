@@ -110,7 +110,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      **/
     public function verifyWelcomeEmail()
     {
-        $emailVer = emailVerificationAdapter::verifyEmail();
+        $emailVer = EmailVerificationAdapter::verifyEmail();
         assert(($emailVer[0] == 'true'), 'GWR Welcome email not received after - ' . $emailVer[1] . ' Secs.');
     }
 

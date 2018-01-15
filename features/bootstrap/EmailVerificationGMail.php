@@ -6,7 +6,7 @@
  * Time: 16:46
  */
 
-class emailVerificationGMail
+class EmailVerificationGMail
 {
     public static $emailReceived;
     public static $startTime;

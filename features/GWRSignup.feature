@@ -37,7 +37,7 @@ Feature: GWR Signup
     Given |I visit "Southern California Page"
     When |I click "Sign Up Link"
     And |I should see "Label on Sign Up Popup"
-    And |I fill in "Email Address Textbox" with "Registered Email Address"
+    And |I fill in "Email Address Textbox" with dynamic "Registered Email Address"
     And |I fill in "First Name Textbox" with "QA"
     And |I fill in "Last Name Textbox" with "Test"
     And |I fill in "Postal Code Textbox" with "53717"

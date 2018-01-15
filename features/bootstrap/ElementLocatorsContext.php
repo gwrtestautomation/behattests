@@ -13,7 +13,7 @@ class ElementLocatorsContext
     {
         if ($locator === 'Sign Up Link')
         {
-            $locator = "#header > div > div > div > div.panel-pane.pane-site-utlity.utility_second.mobile-include-menu.ng-scope > div > ul > li:nth-child(6) > a";
+            $locator = "#header > div > div > div > div.panel-pane.pane-site-utlity.utility_second.mobile-include-menu.ng-scope > div > ul > li:nth-child(7) > a";
         } elseif ($locator === 'Label on Sign Up Popup')
         {
             $locator ="//*[@id='modal-header']/h2";
@@ -22,7 +22,7 @@ class ElementLocatorsContext
             $locator ="//*[@name='modal-form']/descendant::input[@id='modal-email-address']";
         }elseif ($locator === 'First Name Textbox')
         {
-            $locator ="//*[@name='modal-form']/descendant::input[@id='modal-first-name'][2]";
+            $locator ="//*[@name='modal-form']/descendant::input[@id='modal-first-name']";
         }elseif ($locator === 'Last Name Textbox')
         {
             $locator ="//*[@name='modal-form']/descendant::input[@id='modal-last-name']";

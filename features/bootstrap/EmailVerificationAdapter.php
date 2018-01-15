@@ -6,7 +6,7 @@
  * Time: 16:58
  */
 
-class emailVerificationAdapter
+class EmailVerificationAdapter
 {
     public static $emailverified;
 
@@ -21,7 +21,7 @@ class emailVerificationAdapter
 
          if ($emailserver === 'Gmail')
          {
-            self::$emailverified = emailVerificationGMail::emailVerification($host, $port, $username, $password, $maxverificationtime);
+            self::$emailverified = EmailVerificationGMail::emailVerification($host, $port, $username, $password, $maxverificationtime);
          }
 
          return self::$emailverified;
